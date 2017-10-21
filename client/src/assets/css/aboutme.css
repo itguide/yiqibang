@@ -1,0 +1,147 @@
+/*s我的*/
+
+.header {
+    height: 64px;
+    background: #2986ce !important;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 64px;
+}
+
+
+/*e我的*/
+
+.header_left {
+    display: inline-block;
+}
+
+.header_right {
+    display: inline-block
+}
+
+.header_left img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.user {
+    margin-top: 15px;
+}
+
+.menu_font {
+    font-size: 15px;
+    color: #333;
+    padding-top: 8px;
+}
+
+.borderbom {
+    border-bottom: 1px solid #efefef;
+}
+
+.row .col-xl-11 {
+    font-size: 18px;
+}
+
+.col-xs-2 img {
+    margin-left: 20px;
+}
+
+
+/*s part1--part5间距*/
+
+body {
+    background: #efefef;
+}
+
+.row {
+    background: white;
+}
+
+.part1 {
+    height: 90px;
+    border-bottom: 1px solid #efefef;
+}
+
+.part2 {
+    height: 65px;
+    /*padding-bottom: 10px;*/
+    text-align: center;
+}
+
+.part3 {
+    height: 44px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 44px;
+}
+
+.part4 {
+    height: 88px;
+    line-height: 44px;
+    margin-bottom: 24px;
+}
+
+.part5 {
+    height: 132px;
+    line-height: 44px;
+}
+
+.row .col-xs-2 img {
+    width: 5.5px;
+    height: 11px;
+    /*float: right;*/
+    /*border: 1px solid red;*/
+    /*margin-right: 12px;*/
+}
+
+
+/*e part1--part5间距*/
+
+
+/*s 底部菜单-弹性盒子*/
+
+.navs {
+    width: 100%;
+    /*height: 80px;*/
+    display: -webkit-flex;
+    /*line-height: 100px;*/
+    /*color: 000;*/
+    color: black;
+    text-align: center;
+    background: white;
+    font-weight: bold;
+    position: fixed;
+    z-index: 22;
+    bottom: 0px;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav img {
+    height: 23px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+.nav p {
+    color: #666;
+}
+
+.nav3 img {
+    height: 73px;
+    margin-top: -37px;
+}
+
+.navs_pad {
+    padding-top: 80px;
+}
+
+
+/*e 底部菜单*/
