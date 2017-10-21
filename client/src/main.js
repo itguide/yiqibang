@@ -4,10 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
 import '../node_modules/jquery/dist/jquery.min.js'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 import './assets/css/aboutme'
+import './assets/css/login'
 // import './assets/css/bootstrap.min.css'
 // import './assets/js/bootstrap.min'
 Vue.config.productionTip = false

@@ -1,0 +1,20 @@
+*{margin:0;padding:0;}
+input,button,img{border:0;outline:none;}
+.fl{float:left;}
+.fr{float:right;}
+body{background-color:#efefef;}
+.topH{height:7rem;}
+.loginTop h3{width:100%;font-size:1.5rem;font-weight: normal;text-align:center;margin-bottom:3rem;}
+.loginForm p{width:80%;margin:0 auto;}
+.loginForm .loginTel input,.loginForm .loginPwd input{width:93%;height:2.7rem;padding-left:7%;
+  border-radius:1.5rem;border:1px solid #999;margin-bottom:1.4rem;font-size:1.2rem;}
+p.loginSel{width:70%;height:1.2rem;margin-bottom:3rem;}
+p.loginSel label,p.loginSel span{font-size:0.625rem;}
+.loginSel .regBtn{color:#2986ce;text-decoration: underline;}
+p.loginSel input{display:inline-block;vertical-align: middle;margin-bototm:2px;}
+.loginBtn button{width:100%;height:2.7rem;background-color:#8fbbde;border-radius:1.5rem;color:#fff;
+  font-size:1.2rem;}
+.botH{height:7rem;}
+.botBox{display:flex;justify-content: center;}
+.loginBot a{width:2.5rem;height:2.5rem;float:left;margin:0 1.2rem;}
+.loginBot a img{width:100%;height:100%;}

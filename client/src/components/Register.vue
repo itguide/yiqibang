@@ -2,7 +2,7 @@
   <div>
        <div class="topH"></div>
     <div class="loginTop">
-      <h3>账号密码登录</h3>
+      <h3>注册</h3>
       <div class="loginForm">
         <p class="loginTel"><input type="text" placeholder="手机号" /></p>
         <p class="loginPwd"><input type="text" placeholder="密码" /></p>
@@ -11,10 +11,9 @@
             <input type="checkbox" id="remPwd" />
             <label for="remPwd">记住密码</label>
           </span>
-          <!--<span class="fr regBtn">立即注册</span>-->
-          <router-link to="/register" class="fr regBtn">立即注册</router-link>
+          <router-link to="/login" class="fr regBtn">立即登录</router-link>
         </p>
-        <p class="loginBtn"><button @click="userLogin">登录</button></p>
+        <p class="loginBtn"><button @click="userRegister">注册</button></p>
       </div>
     </div>
     <div class="loginBot">
@@ -25,43 +24,38 @@
         <a class="weiboBtn" href=""><img src="/static/img/login/btn_icon_weibo@2x.png" alt=""></a>
       </div>
     </div>
-
   </div>
 </template>
 <script>
-   // import axios from 'axios'
+    // import axios from 'axios'
     export default{
-        name:'Login',
+        name:'register',
         data () {
             return {
-                 msg: ''
+                 msg: '注册'
             }
         },
-         //监听路由检查登录
-        watch:{
-          "$route":'userLogin'
-        },
-
         created(){
             // this.userRegister();
         },
         methods:{
-            userLogin(){
-                var url ="/api/YiQiBang/swagger/#!/yiqibang/get_UserServlet?action=login";
+            userRegister(){
+                console.log(this.$router);
+                // var url ="/yiqibang/post_UserServlet_action";
+                var url ="/api/YiQiBang/swagger/#!/yiqibang/post_UserServlet_action";
                 var params = new URLSearchParams();
                 params.append('kem_user_name', 'wangyifan');
+                params.append('m_user_nick', '');
                 params.append('m_user_password', '123456');
                 var self = this;
-                this.$http.get(url, params).then(function (response) {
+                this.$http.post(url, params).then(function (response) {
                     console.log(response);
-                     console.log(self.$router);
                     if(response.status==200){
-                        console.log("登录成功");
-                        self.$router.push('/');
+                        // alert("注册成功");
+                        self.$router.push("/login");
                     }
                 }).catch(function (error) {
                      console.log(error);
-                     alert("登录失败")
                 });
             }
         }

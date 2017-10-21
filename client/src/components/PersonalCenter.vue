@@ -11,9 +11,7 @@
                         <img src="/static/img/personal center/home_Head portrait@2x.png" alt="">
                     </div>
                     <div class="header_right">
-                        <!--<a href="">登录/注册</a>-->
                         <router-link to="/login">登录/注册</router-link>
-                        <!--<router-link to="/register">注册</router-link>-->
                     </div>
                 </div>
             </div>
