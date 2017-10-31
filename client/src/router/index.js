@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import PersonalCenter from '@/components/PersonalCenter'
-import Login from '@/components/Login'
-import Register from '@/components/Register'
+
+import PersonalCenter from '@/views/PersonalCenter'
+import Personal from '@/components/Personal'
+import UserLogin from '@/views/UserLogin'
+import Home from '@/views/Home'
+import Nav from '@/views/Nav'
 import axios from 'axios'
+import VueValidator from 'vue-validator' //表单验证
+Vue.use(VueValidator);
 Vue.prototype.$http = axios;
 // Vue.use(axios)
 Vue.use(Router)
@@ -11,18 +16,33 @@ Vue.use(Router)
 export default new Router({
     routes: [{
             path: '/',
+            name: 'Home',
+            component: Home
+        },
+        {
+            path: '/myCenter',
             name: 'PersonalCenter',
             component: PersonalCenter
         },
         {
-            path: '/login',
-            name: 'Login',
-            component: Login
+            path: '/home',
+            name: 'Home',
+            component: Home
         },
         {
-            path: '/register',
-            name: 'Register',
-            component: Register
+            path: '/login',
+            name: 'UserLogin',
+            component: UserLogin
+        },
+        {
+            path: '/nav',
+            name: 'nav',
+            component: Nav
+        },
+        {
+            path: '/Personal',
+            name: 'Personal',
+            component: Personal
         }
     ]
 })

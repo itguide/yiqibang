@@ -1,14 +1,5 @@
 /*s我的*/
 
-.header {
-    height: 64px;
-    background: #2986ce !important;
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-    line-height: 64px;
-}
-
 
 /*e我的*/
 
@@ -54,6 +45,10 @@
 
 body {
     background: #efefef;
+}
+
+body {
+    padding-bottom: 70px;
 }
 
 .row {
@@ -113,11 +108,10 @@ body {
     text-align: center;
     background: white;
     font-weight: bold;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 22;
-    bottom: 0px;
+    /*bottom: 0px;*/
     justify-content: space-around;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .nav {
@@ -140,7 +134,7 @@ body {
 }
 
 .navs_pad {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 

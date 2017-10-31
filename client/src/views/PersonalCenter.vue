@@ -1,9 +1,7 @@
 <template>
   <div class="hello">
+    <nav-header>我的</nav-header>
      <div class="container-fluid">
-        <div class="row header">
-            <div class="col-xs-12 col-sm-6 col-md-8">我的</div>
-        </div>
         <div class="row part1">
             <div class="col-xs-8 col-sm-6">
                 <div class="user">
@@ -52,44 +50,27 @@
             <div class="col-xs-2"><img src="/static/img/Personal Center-login/list_more@2x.png" alt=""></div>
         </div>
     </div>
-    <div class="navs_pad"></div>
-    <div class="navs">
-        <div class="nav">
-            <img src="/static/img/personal center/tab_home_default@2x.png" alt="">
-            <P>首页</P>
-
-        </div>
-        <div class="nav">
-            <img src="/static/img/personal center/tab_find_default@2x.png" alt="">
-
-            <P>发现</P>
-
-        </div>
-        <div class="nav nav3">
-            <img src="/static/img/Personal Center-login/tab_release@2x.png" alt="">
-        </div>
-        <div class="nav">
-            <img src="/static/img/personal center/tab_comment_default@2x.png" alt="">
-            <P>热评圈</P>
-        </div>
-        <div class="nav">
-            <img src="/static/img/personal center/tab_ccount_select@2x.png" alt="">
-            <P>我的</P>
-        </div>
-    </div>
+    <NavFooter/>
 
   </div>
 </template>
 
 <script>
+import NavHeader from '../components/NavHeader'
+import NavFooter from '../components/NavFooter'
+
 export default {
-  name: 'PersonalCenter'
+  name: 'PersonalCenter',
+   components:{
+      NavHeader,
+      NavFooter
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+/*h1, h2 {
   font-weight: normal;
 }
 
@@ -105,5 +86,5 @@ li {
 
 a {
   color: #42b983;
-}
+}*/
 </style>

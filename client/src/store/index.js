@@ -1,3 +1,6 @@
+import Vue from 'vue';
+import Vuex from 'vuex';
+Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
         domain: 'http://139.219.67.99:8080', //保存后台请求的地址，修改时方便（比方说从测试服改成正式服域名）
@@ -15,3 +18,6 @@ const store = new Vuex.Store({
         }
     }
 })
+export default new Vuex.Store({
+    // state
+});
